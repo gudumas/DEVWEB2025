@@ -1,0 +1,77 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333a34;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* informações pessoais */
+.informacoes {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.informacoes img {
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.informacoes h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.informacoes h3 {
+    color: #555;
+}
+
+.informacoes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.informacoes ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #1f50ccce;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+/* rodapé */
+footer {
+    background-color: #6b6b6b;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 40px;
+}
