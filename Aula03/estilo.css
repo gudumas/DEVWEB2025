@@ -1,0 +1,52 @@
+
+* {
+    margin: 0;
+}
+
+#flexbox1 {
+    background-color:rgb(1, 4, 111);
+    padding: 15px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#flexbox2 {
+    background-color: rgb(14, 27, 168);
+    padding: 15px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.bloco-1 {
+    background-color: rgb(177, 156, 79);
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.bloco-2 {
+    background-color: rgb(255, 94, 0);
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.bloco-3 {
+    background-color: rgb(212, 255, 0);
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 16px;
+}
