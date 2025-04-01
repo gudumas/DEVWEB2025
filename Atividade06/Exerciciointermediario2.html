@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let precoOriginal = parseFloat(prompt("Digite o preço original do produto:"));
+let desconto = parseFloat(prompt("Digite a porcentagem de desconto (%):"));
+
+if (!isNaN(precoOriginal) && !isNaN(desconto) && desconto >= 0 && desconto <= 100) {
+    let valorDesconto = (precoOriginal * desconto) / 100;
+    let precoFinal = precoOriginal - valorDesconto;
+
+    document.write(`<h2>Resumo do Desconto:</h2>`);
+    document.write(`<p>Preço original: R$ ${precoOriginal.toFixed(2)}</p>`);
+    document.write(`<p>Desconto de ${desconto}%: R$ ${valorDesconto.toFixed(2)}</p>`);
+    document.write(`<h3>Preço final: <strong>R$ ${precoFinal.toFixed(2)}</strong></h3>`);
+} else  
+    document.write("<h2>Por favor, insira valores válidos para o preço e o desconto.</h2>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+const cotacaoDolar = 5.68;
+
+let valorReais = parseFloat(prompt("Digite o valor em reais (BRL):"));
+
+if (!isNaN(valorReais) && valorReais >= 0) {
+    let valorDolares = valorReais / cotacaoDolar;
+
+    document.write(`<h2>Conversão de Moeda:</h2>`);
+    document.write(`<p>Valor em reais: R$ ${valorReais.toFixed(2)}</p>`);
+    document.write(`<p>Cotação do dólar: $1 = R$ ${cotacaoDolar.toFixed(2)}</p>`);
+    document.write(`<h3>Valor convertido: <strong>US$ ${valorDolares.toFixed(2)}</strong></h3>`);
+} else 
+    document.write("<h2>Por favor, insira um valor válido em reais.</h2>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+let num2 = parseFloat(prompt("Digite o segundo número:"));
+
+    // Conta
+if (!isNaN(num1) && !isNaN(num2)) {
+    let soma = num1 + num2;
+    let subtracao = num1 - num2;
+    let multiplicacao = num1 * num2;
+    let divisao = num2 !== 0 ? (num1 / num2).toFixed(2) : "Não é possível dividir por zero";
+
+    // saida
+    document.write(`<h2>Resultados:</h2>`);
+    document.write(`<p>${num1} + ${num2} = ${soma}</p>`);
+    document.write(`<p>${num1} - ${num2} = ${subtracao}</p>`);
+    document.write(`<p>${num1} × ${num2} = ${multiplicacao}</p>`);
+    document.write(`<p>${num1} ÷ ${num2} = ${divisao}</p>`);
+} else {
+    document.write("<h2>Por favor, insira números válidos.</h2>");
+}
+    </script>
+</body>
+</html>
