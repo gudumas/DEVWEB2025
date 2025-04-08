@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Interativa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+            background-size: 400% 400%;
+            animation: gradientBG 10s infinite alternate;
+            color: #333;
+        }
+     
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+     
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background: #ff6b6b;
+            color: white;
+            font-weight: bold;
+            margin: 10px;
+            transition: 0.3s;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background: #ff4757;
+            transform: scale(1.05);
+        }
+
+        
+        input {
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 60%;
+            max-width: 300px;
+        
+        }
+
+        .linha {
+            width: 80%;
+            height: 2px;
+            background: #ff6b6b;
+            margin: 20px auto;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Página Interativa</h1>
+
+    <button onclick="mudarCor()">Mudar Cor de Fundo</button>
+
+    <div class="linha"></div>
+
+    <input type="text" id="entradaTexto" placeholder="Digite algo">
+    <button onclick="exibirTexto()">Exibir Texto</button>
+
+    <p id="textoExibido"></p>
+
+    <script>
+        function mudarCor() {
+            const cores = ["#ff5733", "#33ff57", "#3357ff", "#f0f033", "#ff33f0", "#6a0572", "#05726a"];
+            const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+            document.body.style.background = corAleatoria;
+        }
+
+        function exibirTexto() {
+            const texto = document.getElementById("entradaTexto").value;
+            document.getElementById("textoExibido").innerText = texto;
+        }
+    </script>
+
+</body>
+</html>

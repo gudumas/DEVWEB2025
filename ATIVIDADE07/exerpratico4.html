@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Cor de Fundo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            transition: background 0.5s ease;
+            color: #333;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 60%;
+            max-width: 300px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .linha {
+            width: 80%;
+            height: 2px;
+            background: #ff6b6b;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Digite uma cor para alterar o fundo</h1>
+
+    <input type="text" id="corInput" placeholder="Exemplo: red, blue, orange, etc.">
+
+    <script>
+        document.getElementById("corInput").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") { 
+                const corDigitada = event.target.value.trim();
+                document.body.style.background = corDigitada;
+                event.target.value = ""; 
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Interativo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(45deg, #74ebd5, #acb6e5);
+            background-size: 400% 400%;
+            animation: gradientBG 10s infinite alternate;
+            color: #333;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .contador-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        button {
+            font-size: 24px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background: #ff6b6b;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background: #ff4757;
+            transform: scale(1.05);
+        }
+
+        #contador {
+            font-size: 30px;
+            font-weight: bold;
+            color: #2c3e50;
+            width: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contador Interativo</h1>
+
+    <div class="contador-container">
+        <button onclick="diminuir()">-</button>
+        <span id="contador">0</span>
+        <button onclick="aumentar()">+</button>
+    </div>
+
+    <script>
+        let contador = 0;
+
+        function aumentar() {
+            contador++;
+            atualizarContador();
+        }
+
+        function diminuir() {
+            contador--;
+            atualizarContador();
+        }
+
+        function atualizarContador() {
+            document.getElementById("contador").innerText = contador;
+        }
+    </script>
+
+</body>
+</html>
