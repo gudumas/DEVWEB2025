@@ -1,0 +1,90 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #6d6e63;
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: rgb(163, 181, 71);
+    padding: 85px;
+    border-radius: 155px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+img {
+    width: 40px;
+}
+
+.input.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 8px;
+}
+#add-task {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    border: 1px solid green;
+    border-radius: 4px;
+    
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgba(200, 100, 50, 0);
+    color: rgb(77, 75, 75);
+    border-radius: 4px;
+    border: 1px solid green;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.filters button {
+    margin: 5px;
+    background-color: white;
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    color: black;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+.btnTasks{
+    width: 20px;
+
+}
+
+.completed {
+    text-decoration-line: line-through;
+    color: green;
+}
+
+.dark-mode {
+    background-color: black;}
